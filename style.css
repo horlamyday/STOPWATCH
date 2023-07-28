@@ -1,0 +1,63 @@
+:root {
+    --primary: crimson;
+    --dark: hwb(247 4% 53%);
+    --darkdark: hsl(113, 33%, 95%);
+    --light: hsl(120, 84%, 46%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'fira sans', sans-serif;
+}
+
+body{
+    background: var(--dark);
+    color: var(--light);
+}
+.watch{
+    text-align: center;
+    background-color: var(--darkdark);
+    width: 100%;
+    max-width: 360%;
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+.time{
+    font-size: 5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.control button{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    user-select: none;
+    cursor: pointer;
+
+    color: var(--darkdark);
+    font-size: 1.125rem;
+    background: var(--dark);
+    margin: 0 0.5rem;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+
+    transition: 0.4s;
+
+}
+button:hover{
+    opacity: 0.3;
+}
+button:active{
+    background: var(--dark);
+}
